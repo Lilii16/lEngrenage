@@ -2,31 +2,28 @@
 include_once './utilities/composantsG/header.php';
 include_once './utilities/navigation/navGenerale.php';
 ?>
+<section id="accueil" class="py-5 position-relative w-100" style="min-height: 75em;">
+  <div class="container-fluid rec-section fit-text d-flex flex-column justify-content-end text-start fw-bold">
+    <h2 class="p-4 mx-2 titre-section text-end">ACCUEIL</h2>
+  </div>
+  <div class="color-background"></div>
+  <div class="content-accueil row bg-dark position-absolute" style="width: 65%; padding-bottom: 40%; right: 15%; margin-top: 10%;">
+    <div class="col-12 d-flex" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; padding: 0; margin: 0;">
+      <div class="image-accueil" style="flex: 0 0 40%; height: 100%; display: flex; align-items: center; justify-content: flex-start; padding: 0; margin: 0;">
+        <img src="/LENGRENAGE/assets/images/bingo.png" alt="Image" style="height: 100%; width: 100%; object-fit: cover; margin: 0;">
+      </div>
+      <div class="texte-accueil" style="flex: 1; padding: 0; margin: 0;"></div>
+    </div>
+  </div>
+</section>
 
-<div id="accueil" class="container-fluid about fit-text d-flex flex-column justify-content-end text-start">
-    <h2 class="p-4 mx-2 fs-2">ACCUEIL</h2>
-</div>
-<div class="image-overlay-container position-relative">
-    <div class="bg-black">
-        <img src="assets/images/fuseeCoupee.png" class="img-fluid w-75" alt="Image d'arrière-plan">
-    </div>
-    <div class="yellow-rec position-absolute w-100 h-100"></div>
-    <div class="yellow-rec-vertical">
-    <div class="text-overlay mt-2 p-4 fs-4">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-         sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </div>
-    <div class="text-overlay p-4 fs-4">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-         sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </div>
-    <div class="text-overlay text-end p-4 fs-4">
-        Lorem ipsum dolor sit amet.
-    </div>
-</div>
+
+
+
+
+<?php
+include_once './utilities/composantsN/actualites.php';
+include_once './utilities/composantsN/creations.php';
+include_once './utilities/composantsN/nous.php';
+include_once './utilities/composantsN/contact.php';
+?>

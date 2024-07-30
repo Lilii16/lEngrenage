@@ -1,5 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Chilanka&family=Englebert&display=swap');
-
+@font-face {
+    font-family: 'BabyDoll'; /* Nom de la police que vous utiliserez dans votre CSS */
+    src: url('assets/fonts/baby_doll-webfont.woff') format('woff');
+    font-weight: normal; /* Ajustez selon les variations de votre police (normal, bold, etc.) */
+    font-style: normal; /* Ajustez selon les variations de votre police (normal, italic, etc.) */
+}
+@font-face {
+    font-family: 'Plein'; /* Nom de la police que vous utiliserez dans votre CSS */
+    src: url('assets/fonts/WEB/css/plein.css') format('woff');
+    font-weight: normal; /* Ajustez selon les variations de votre police (normal, bold, etc.) */
+    font-style: normal; /* Ajustez selon les variations de votre police (normal, italic, etc.) */
+}
+@font-face {
+    font-family: 'Cute'; /* Nom de la police que vous utiliserez dans votre CSS */
+    src: url('assets/fonts/cutefont-regular-webfont.woff') format('woff');
+    font-weight: normal; /* Ajustez selon les variations de votre police (normal, bold, etc.) */
+    font-style: normal; /* Ajustez selon les variations de votre police (normal, italic, etc.) */
+}
 *{
     margin: 0;
     padding: 0;
@@ -7,109 +24,70 @@
 }
 body {
     overflow-x: hidden;
-    font-family: "Chilanka", cursive;
+    font-family: 'Plein', sans-serif;
     font-weight: 400;
     font-style: normal;
 }
-
-h1, h2 {
-    font-family: "Englebert", cursive;
+/* TOUT CE QUI EST RELATIFS A LA BANNIERE + NAVBAR + MEDIA QUERIE RELATIF */
+.compagnie {
+    font-family: 'Cute', sans-serif;
+    font-size: 5em;
     font-weight: 600;
-    font-style: normal;
-    font-size:1.5em;
 }
+.h2 {
+    font-family: 'Cute', sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+.overlay-content {
+    z-index: 1;
+    color: black; /* Changer la couleur du texte si nécessaire */
+}
+.navbar .nav-link {
+    color: black; /* Couleur des liens de navigation */
+    font-weight: bold;
+    font-family: 'Cute', sans-serif;
+    font-size: 1.5em;
+}
+.navbar-collapse.show {
+    background-color: rgba(255, 255, 255, 0.7); /* Fond semi-transparent noir */
+    width: 50%;
+}
+/* Styles pour les écrans mobiles */
+@media (max-width: 768px) {
+    .image-container {
+        height: 360px; /* Ajustez la hauteur selon les besoins */
+    }
+}
+/* FIN DE TOUT CE QUI EST RELATIFS A LA BANNIERE + NAVBAR + MEDIA QUERIE RELATIF */
 
-.image-container {
-    height: 650px; /* Hauteur fixe du conteneur */
-    overflow: hidden; /* Masquer l'excès d'image */
-    position: relative;
-  }
-  
 
-.object-fit-cover {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Recadrer l'image pour remplir le conteneur */
-    object-position: bottom;
-}
-
-.fit-container {
-    height: 90px; /* Hauteur du conteneur */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; /* Largeur totale du conteneur */
-    background-color: rgba(166, 147, 142, 0.2); /* Couleur de fond pour mieux voir l'effet */
-}
-.fit-text {
-    font-size: 2rem; /* Ajustez la taille de la police selon vos besoins */
-    text-align: center;
-    letter-spacing: 1em;
-}
-.menu {
-    height: 85px; /* Hauteur du conteneur */
-}
-.about {
+/* DEBUT RECTANGLES D'INTRO DE CHAQUE SECTION, FORME + TEXTE */
+.rec-section {
     height: 140px; /* Hauteur du conteneur */
     width: 100%; /* Largeur totale du conteneur */
-    background-color: rgba(245, 247, 177, 0.276); /* Couleur de fond pour mieux voir l'effet */ 
 }
-.bg-black {
-    background-color: black;
+.titre-section {
+    font-family: 'Cute', sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    letter-spacing: 5px;
 }
-.image-overlay-container {
-    position: relative;
-    width: 100%;
-}
-.yellow-rec {
-    background-color: rgba(249, 226, 17, 0.3);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none; /* Permet de cliquer à travers le rectangle */
-    z-index: 1;
-}
-.yellow-rec-vertical {
-    position:absolute;
-    width: 40%; /* Ajustez la largeur selon vos besoins */
-    height: 75%; /* Ajustez la hauteur selon vos besoins */
-    background-color: rgba(255, 255, 0); /* Jaune avec 50% de transparence */
-    z-index: 2;
-    top: 55%; /* Positionnement vertical */
-    left: 65%; /* Positionnement horizontal */
-    transform: translate(-25%, -55%); /* Centre le rectangle */
-    border-radius: 0%;
-    box-shadow: 
-    0 0 5px #fff,    /* Couleur du halo lumineux */
-    0 0 10px #eaff00, /* Couleur du halo lumineux */
-    0 0 15px #eaff00, /* Couleur du halo lumineux */
-    0 0 20px #eaff00, /* Couleur du halo lumineux */
-    0 0 30px #eaff00, /* Couleur du halo lumineux */
-    0 0 40px #eaff00; /* Couleur du halo lumineux */
-}
-@media (min-width: 320px) and (max-width: 425px){
-    .fit-text {
-        letter-spacing: 0.05em; /* Réduit l'espacement des lettres pour petits écrans */
-    }
-}
+/* FIN RECTANGLES D'INTRO DE CHAQUE SECTION, FORME + TEXTE */
+
+/* DEBUT SECTION ACCUEIL*/
 
 @media (max-width: 768px) {
-    .fit-text {
-        letter-spacing: 1em; /* Réduit l'espacement des lettres pour petits écrans */
+    .content-accueil {
+      width: 90%;
+      right: 5%;
+      padding-bottom: 80em;
     }
-}
-
-@media (min-width: 769px) and (max-width: 992px) {
-    .fit-text {
-        letter-spacing: 1em; /* Espacement moyen pour écrans moyens */
+    .image-accueil {
+      order: 1; /* Image en premier sur mobile */
     }
-}
-
-@media (min-width: 993px) {
-    .fit-text {
-        letter-spacing: 1em; /* Espacement plus large pour grands écrans */
+    .texte-accueil {
+      order: 2; /* Texte en deuxième sur mobile */
     }
-}
-
+  }
