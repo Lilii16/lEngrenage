@@ -7,15 +7,33 @@ include_once './utilities/navigation/navGenerale.php';
     <h2 class="p-4 mx-2 titre-section text-end">ACCUEIL</h2>
   </div>
   <div class="color-background"></div>
-  <div class="content-accueil row bg-dark position-absolute" style="width: 65%; padding-bottom: 40%; right: 15%; margin-top: 10%;">
-    <div class="col-12 d-flex" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; padding: 0; margin: 0;">
-      <div class="image-accueil" style="flex: 0 0 40%; height: 100%; display: flex; align-items: center; justify-content: flex-start; padding: 0; margin: 0;">
-        <img src="/LENGRENAGE/assets/images/bingo.png" alt="Image" style="height: 100%; width: 100%; object-fit: cover; margin: 0;">
-      </div>
-      <div class="texte-accueil" style="flex: 1; padding: 0; margin: 0;"></div>
+  <div class="content-accueil row bg-dark position-absolute">
+        <div class="col-12 d-flex">
+            <div class="image-accueil">
+                <img src="/LENGRENAGE/assets/images/bingo.png" alt="Image">
+            </div>
+            <div class="texte-accueil d-flex flex-column col-8 px-2">
+                <div class="row text-end text-light col-4 ">dejfenfrjvnoroosssssssssssssssssssssssssssssssss
+                    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+                    ddddddddddddddddddddddddddeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+                    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+                </div>
+                <div class="row text-start text-light w-25">rheeeeeeeeeeeeeedejfenfrjvnoroosssssssssssssssss
+                    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+                    ddddddddddddddddddddddddddeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+                    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+                </div>
+                <div class="row text-end text-light w-25">evvvvvvvvvvvvvevdejfenfrjvnoroosssssssssssssssssss
+                    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+                    ddddddddddddddddddddddddddeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+                    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </section>
+
+
 
 
 

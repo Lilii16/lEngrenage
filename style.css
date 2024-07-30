@@ -78,16 +78,69 @@ body {
 
 /* DEBUT SECTION ACCUEIL*/
 
-@media (max-width: 768px) {
+.content-accueil {
+    width: 65%;
+    padding-bottom: 40%;
+    right: 15%;
+    margin-top: 10%;
+    position: absolute;
+    background-color: #343a40; /* bg-dark */
+    overflow: hidden; /* Assure que le contenu ne déborde pas */
+}
+
+.content-accueil .col-12 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.content-accueil .image-accueil {
+    flex: 0 0 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start; /* Centrer l'image */
+    padding: 0;
+    margin: 0;
+    overflow: hidden; /* Assure que l'image ne déborde pas */
+}
+
+.content-accueil .image-accueil img {
+    max-width: 100%; /* Assure que l'image ne dépasse pas la largeur de son conteneur */
+    max-height: 100%; /* Assure que l'image ne dépasse pas la hauteur de son conteneur */
+    object-fit: cover; /* Maintient les proportions tout en remplissant l'espace */
+    margin: 0;
+}
+
+.content-accueil .texte-accueil {
+    flex: 1;
+    padding: 0;
+    margin: 0;
+}
+
+/* Media Query pour les petits écrans (smartphones) */
+@media (max-width: 767px) {
     .content-accueil {
-      width: 90%;
-      right: 5%;
-      padding-bottom: 80em;
+        width: 90%;
+        padding-bottom: 100%; /* Augmente la hauteur de la div pour s'adapter à l'image */
+        right: 5%;
+        margin-top: 5%;
     }
-    .image-accueil {
-      order: 1; /* Image en premier sur mobile */
+
+    .content-accueil .image-accueil {
+        flex: 0 0 100%;
+        height: 100%; /* La hauteur de la div image-accueil est ajustée à 100% */
+        justify-content: center; /* Centre l'image dans le conteneur */
     }
-    .texte-accueil {
-      order: 2; /* Texte en deuxième sur mobile */
+
+    .content-accueil .texte-accueil {
+        flex: 1;
+        height: auto; /* Permet au texte de s'ajuster selon le contenu */
+        background-color: #ffffff; /* Juste un exemple pour visualiser l'espace */
     }
-  }
+}

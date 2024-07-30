@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="col-md image-container position-relative overflow-hidden" style="height: 750px; overflow: hidden;">
+    <div class="col-md image-container position-relative overflow-hidden" style="height: 1000px; overflow: hidden;">
         <img src="/LENGRENAGE/assets/images/banniereTrue.png" class="img-fluid object-fit-cover object-position-bottom w-100 h-100" alt="Image d'arrière-plan">
         <div class="overlay-content position-absolute top-0 left-0 w-100 h-100 d-flex flex-column justify-content-start align-items-center">
             <div class="fit-text text-center mb-0">
