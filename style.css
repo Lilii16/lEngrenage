@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Chilanka&family=Englebert&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @font-face {
     font-family: 'BabyDoll'; /* Nom de la police que vous utiliserez dans votre CSS */
     src: url('assets/fonts/baby_doll-webfont.woff') format('woff');
@@ -80,7 +81,6 @@ body {
 
 .content-accueil {
     width: 65%;
-    padding-bottom: 40%;
     right: 15%;
     margin-top: 10%;
     position: absolute;
@@ -122,7 +122,15 @@ body {
     padding: 0;
     margin: 0;
 }
-
+p {
+    font-family: "Chilanka", cursive;
+    font-size: 400;
+    font-style: normal;
+}
+.texte-accueil p {
+    float: right;
+    margin-left: 10px;
+}
 /* Media Query pour les petits écrans (smartphones) */
 @media (max-width: 767px) {
     .content-accueil {
@@ -143,4 +151,23 @@ body {
         height: auto; /* Permet au texte de s'ajuster selon le contenu */
         background-color: #ffffff; /* Juste un exemple pour visualiser l'espace */
     }
+}
+
+/* DEBUT COMPAGNIE */
+@media (max-width: 767px) {
+    .compagnie{ 
+    
+}
+}
+/* FIN COMPAGNIE */
+
+
+/* DEBUT CONTACT */
+.underline {
+    text-decoration: underline;
+}
+/* FIN CONTACT */ 
+
+.bg-yellow {
+    background-color: #FEEA37;
 }
