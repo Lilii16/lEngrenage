@@ -49,9 +49,5 @@ include_once './utilities/navigation/navGenerale.php';
 </div>
 
 <?php
-include_once './utilities/composantsN/actualites.php';
-include_once './utilities/composantsN/creations.php';
-include_once './utilities/composantsN/nous.php';
-include_once './utilities/composantsN/contact.php';
 include_once './utilities/navigation/footer.php';
 ?>
