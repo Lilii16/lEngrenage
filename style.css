@@ -220,17 +220,16 @@ p {
 
 .slider {
     position: relative;
-    max-width: 600px;
+    max-width: 50vw;
     margin: auto;
     overflow: hidden;
-    border: 2px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .slides {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 1s ease-in-out;
 }
 
 .slide {
@@ -265,4 +264,17 @@ button.next {
 
 button:hover {
     background-color: rgba(0, 0, 0, 0.8);
+}
+@media (max-width: 768px) {
+    .slider {
+        position: relative;
+        max-width: 100%;
+        margin: auto;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .rec-red {
+        height: 20vh;
+    }
 }

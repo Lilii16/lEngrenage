@@ -30,45 +30,28 @@
 </div>
 <section class="creations-sec">
     <div class="d-flex flex-column">
-        <div class="w-100" style="height: 10em; background-color: #FF0303;"></div>
+        <div class="rec-red w-100" style="height: 10em; background-color: #FF0303;"></div>
+        <div class="w-100" style="height: 10em; background-color: white;"></div>
         <div class="slider">
-        <div class="slides">
-        <div class="slide"><img src="/LENGRENAGE/assets/images/gg1.png" alt="Photo 1"></div>
-        <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="slides">
+                <div class="slide"><img src="/LENGRENAGE/assets/images/gg1.png" alt="Photo 1"></div>
+                <div class="slide"><img src="/LENGRENAGE/assets/images/gg3.png" alt="Infos 1"></div>
+                <div class="slide"><img src="/LENGRENAGE/assets/images/gg2.png" alt="Photo 2"></div>
+                <div class="slide"><img src="/LENGRENAGE/assets/images/bingo1.png" alt="Photo 3"></div>
+                <div class="slide"><img src="/LENGRENAGE/assets/images/bingo3.png" alt="Infos 2"></div>
+                <div class="slide"><img src="/LENGRENAGE/assets/images/bingo2.png" alt="Photo 4"></div>
+                <div class="slide"><img src="/LENGRENAGE/assets/images/lOM1.png" alt="Photo 5"></div>
+                <div class="slide"><img src="/LENGRENAGE/assets/images/lOM3.png" alt="Infos 3"></div>
+                <div class="slide"><img src="/LENGRENAGE/assets/images/lOM2.png" alt="Photo 6"></div>
+                <!-- Ajoutez plus de photos ici -->
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
         </div>
-            <div class="slide"><img src="/LENGRENAGE/assets/images/gg2.png" alt="Photo 2"></div>
-        <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-            <div class="slide"><img src="/LENGRENAGE/assets/images/bingo1.png" alt="Photo 3"></div>
-        <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-            <div class="slide"><img src="/LENGRENAGE/assets/images/bingo2.png" alt="Photo 4"></div>
-        <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-            <div class="slide"><img src="/LENGRENAGE/assets/images/lOM1.png" alt="Photo 5"></div>
-        <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-            <div class="slide"><img src="/LENGRENAGE/assets/images/lOM2.png" alt="Photo 6"></div>
-        <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-            <!-- Ajoutez plus de photos ici -->
-        </div>
-        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        <div class="w-100" style="height: 10em; background-color: white;"></div>
     </div>
     
-  </section>
-  
-  <script src="script.js"></script>
+</section>
+
+
+<script src="script.js"></script>
