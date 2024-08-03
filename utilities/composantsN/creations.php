@@ -20,34 +20,55 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-    <!-- Lien vers le CSS -->
+    <!-- Lien vers le CSS et JavaScript -->
     <link rel="stylesheet" href="/LENGRENAGE/style.css">
+    <script defer src="/LENGRENAGE/script.js"></script>
 </head>
 
 <div id="creations" class="container-fluid rec-section fit-text d-flex flex-column justify-content-end text-start fw-bold">
     <h2 class="p-4 mx-2 titre-section text-end">CREATIONS</h2>
 </div>
-<section>
-    <div class="d-flex justify-content-center">
+<section class="creations-sec">
+    <div class="d-flex flex-column">
         <div class="w-100" style="height: 10em; background-color: #FF0303;"></div>
-</section>
-
-<div class="row">
+        <div class="slider">
+        <div class="slides">
+        <div class="slide"><img src="/LENGRENAGE/assets/images/gg1.png" alt="Photo 1"></div>
+        <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+            <div class="slide"><img src="/LENGRENAGE/assets/images/gg2.png" alt="Photo 2"></div>
+        <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+            <div class="slide"><img src="/LENGRENAGE/assets/images/bingo1.png" alt="Photo 3"></div>
+        <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+            <div class="slide"><img src="/LENGRENAGE/assets/images/bingo2.png" alt="Photo 4"></div>
+        <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+            <div class="slide"><img src="/LENGRENAGE/assets/images/lOM1.png" alt="Photo 5"></div>
+        <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+            <div class="slide"><img src="/LENGRENAGE/assets/images/lOM2.png" alt="Photo 6"></div>
+        <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+            <!-- Ajoutez plus de photos ici -->
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
     
-    <div class="col-lg-4 col-md-4 col-xs-4 thumb">
-        <a class="thumbnail" href="#">
-            <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-        </a>
-    </div>
-    <div class="col-lg-4 col-md-4 col-xs-4 thumb">
-        <a class="thumbnail" href="#">
-            <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-        </a>
-    </div>
-    <div class="col-lg-4 col-md-4 col-xs-4 thumb">
-        <a class="thumbnail" href="#">
-            <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-        </a>
-    </div>
-
-</div>
+  </section>
+  
+  <script src="script.js"></script>
